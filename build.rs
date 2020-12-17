@@ -4,7 +4,6 @@ use std::env;
 use std::path::PathBuf;
 
 fn main() {
-
     // what library to link with
     println!("cargo:rustc-link-lib=xenevtchn");
 
@@ -27,4 +26,3 @@ fn main() {
         .write_to_file(out_path.join("bindings.rs"))
         .expect("Couldn't write bindings!");
 }
-
