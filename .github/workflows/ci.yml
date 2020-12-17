@@ -35,25 +35,17 @@ jobs:
       - name: Install Xen headers and libraries
         run: sudo apt-get install -y libxen-dev
 
-      - name: Install stable toolchain with clippy
+      - name: Install stable toolchain
         uses: actions-rs/toolchain@v1
         with:
           profile: minimal
           toolchain: stable
-          components: clippy
       - uses: actions/checkout@v1
 
       - name: Build crate
         uses: actions-rs/cargo@v1
         with:
           command: build
-
-      - name: Annotate commit with clippy warnings
-        uses: actions-rs/clippy-check@v1
-        with:
-          name: clippy
-          token: ${{ secrets.GITHUB_TOKEN }}
-          args: -- -D warnings
 
   publish:
     needs: [format, build]
