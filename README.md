@@ -1,6 +1,8 @@
 # xenevtchn-sys
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+![CI](https://github.com/Wenzel/xenevtchn-sys/workflows/CI/badge.svg)
+[![Crates.io](https://img.shields.io/crates/v/xenevtchn-sys.svg)](https://crates.io/crates/xenevtchn-sys)
+
 
 > Rust bindings for xenevtchn library
 
@@ -25,7 +27,6 @@
 
 PRs accepted.
 
-Small note: If editing the Readme, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
 ## License
 
