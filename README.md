@@ -1,5 +1,8 @@
 # xenevtchn-sys
 
+![CI](https://github.com/Wenzel/xenevtchn-sys/workflows/CI/badge.svg)
+[![Crates.io](https://img.shields.io/crates/v/xenevtchn-sys.svg)](https://crates.io/crates/xenevtchn-sys)
+
 
 > Rust bindings for xenevtchn library
 
